@@ -28,3 +28,16 @@
 | symbolize	| `flutter symbolize --input=<STACK_TRACK_FILE>`|	Symbolize a stack trace from the AOT compiled flutter application.|
 | test	| `flutter test <DIRECTORY>`	| Runs tests in this package. Use instead of `dart test`.|
 | upgrade	| `flutter upgrade`	| Upgrade your copy of Flutter.|
+
+
+## 1. Create a new project with specific options
+
+- Custom package name:  
+ ex: From com.dsn.package_app `flutter create --org=com.dsn  package_app `
+- Different app name and folder name:  
+  ex: `flutter create --project-name=project_name folders_app`
+- Platform-specific native language:  
+  ex1: The native platform Android languages Java and Kotlin (default). `flutter create --android-language=java flutter_app`  
+  ex2: The native platform for iOS languages Objective C and Swift (default). `flutter create --ios-language=objc flutter_app`
+- Change native language :  
+  ex: You may have to recode your logic according to new platform-specific language. `flutter create --android-language=java --ios-language=objc flutter_app`
